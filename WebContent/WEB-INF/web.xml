@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <servlet>
+    <servlet-name>CheckEmailServlet</servlet-name>
+    <servlet-class>controller.CheckEmailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>controller.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MonHocServlet</servlet-name>
+    <servlet-class>controller.MonHocServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NoiDungThiServlet</servlet-name>
+    <servlet-class>controller.NoiDungThiServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RoleServlet</servlet-name>
+    <servlet-class>controller.RoleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckRole</servlet-name>
+    <servlet-class>controller.CheckRole</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckEmailServlet</servlet-name>
+    <url-pattern>/CheckEmailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MonHocServlet</servlet-name>
+    <url-pattern>/MonHocServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoiDungThiServlet</servlet-name>
+    <url-pattern>/NoiDungThiServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoleServlet</servlet-name>
+    <url-pattern>/RoleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckRole</servlet-name>
+    <url-pattern>/CheckRole</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  
+</web-app>
